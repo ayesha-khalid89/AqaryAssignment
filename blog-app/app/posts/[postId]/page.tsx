@@ -30,13 +30,13 @@ const page = () => {
     <main>
 
         <h1>{postId}</h1>
-      <h1>A List of Blog Posts</h1>
+      <h1>Post Details</h1>
       <br ></br>
       {post && (
         <div key={post.id}>
           <h2>Title: {post.name}</h2>
           <p>Email: {post.email}</p>
-          <p>{post.body}</p>
+          <p>Comments: {post.body}</p>
         </div>
       )}
     </main>

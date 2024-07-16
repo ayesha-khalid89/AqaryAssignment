@@ -26,10 +26,10 @@ const Feed = () => {
     },[])
   return (
     <main>
-      <h1>A List of Blog Posts</h1>
+      <h1 style={{textAlign:'center'}}>A List of Blog Posts</h1>
       <br ></br>
       {posts && posts?.map((post) => (
-        <Link href={`posts/${post.id}`} key={post.id}>
+        <Link href={`posts/${post.id}`} key={post.id} style={{textAlign:'center'}}>
           <h2>Title: {post.title}</h2>
           <p>Content: {post.body}</p>
         </Link>
